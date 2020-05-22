@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image editor</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0px;background: #031321;}
+     .main{transition: 0.5; position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+     .main1{position: absolute;top: 80%;left: 50%;transform: translate(-50%,-50%);}
+     img{width: 100%;height: 100%;}
+     button{padding: 15px 30px;color: #2196f3;letter-spacing: 2px;font-size: 15px;transition: 0.2s;}
+     button:hover{color: #255784;background: #2196f3;
+     box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;transition: 1s;}
+     
+    </style>
+</head>
+<body>
+    <div class="main">
+    <img src="spider.jpg" id="im" ><br>
+    </div>
+    <div class="main1">
+        <button onclick="grayscale()">grayscale</button>
+        <button onclick="blu()">blur</button>
+        <button onclick="contrast()">contrast</button>
+        <button onclick="sepia()">sepia</button>
+        <button onclick="dropshadow()">dropshadow</button>
+    </div>
+    <script>
+       function grayscale()
+       {
+           document.getElementById('im').style.filter="grayscale(100%)";
+       }
+       function blu()
+       {
+           document.getElementById('im').style.filter="blur(4px)";
+       }
+       function contrast()
+       {
+           document.getElementById('im').style.filter="contrast(300%)";
+       }
+       function sepia()
+       {
+           document.getElementById('im').style.filter="sepia(100%)";
+       }
+       function dropshadow()
+       {
+           document.getElementById('im').style.filter="drop-shadow(15px 15px 15px #2196f3)";
+       }
+    
+    </script>
+</body>
+</html>

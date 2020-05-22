@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{margin: 0;background-color: gray;animation: bg 10s infinite;}
+        *{box-sizing: border-box;}
+        .main{position: absolute;top:50% ;left: 50%;transform: translate(-50%,-50%);align-items: center;justify-content: center;display: flex;}
+        span{width: 5px;height: 50px;background-color: honeydew;border-radius: 60px;position: absolute;animation:load 1s infinite;}
+        span:nth-child(2)
+        {margin-left: 10px;
+        animation-delay: .1s;}
+        span:nth-child(3)
+        {margin-left: 20px;
+        animation-delay: .2s;}
+        span:nth-child(4)
+        {margin-left: 30px;
+        animation-delay: .3s;}
+        span:nth-child(5)
+        {margin-left: 40px;
+        animation-delay: .4s;}
+        span:nth-child(6)
+        {margin-left: 50px;
+        animation-delay: .5s;}
+        span:nth-child(7)
+        {margin-left: 60px;
+        animation-delay: .6s;}
+        span:nth-child(8)
+        {margin-left: 70px;
+        animation-delay: .7s;}
+     @keyframes load{
+         0%{height: 0px;}
+         25%{height: 10px;background-color: lightseagreen;}
+         50%{height: 30px;background-color: lightskyblue;}
+         75%{height: 60px;background-color: lightslategrey;}
+         100%{height: 0px;background-color: lightsteelblue;}
+     }
+         @keyframes bg
+         {0%{background-color: darkgoldenrod;}
+         25%{background-color:chocolate;}
+         50%{background-color:coral;}
+         75%{background-color:yellow;}
+         100%{background-color:greenyellow;}
+             
+         }
+     }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0; background: url(netflix.jpg);opacity: 0.9;;font-family: Arial;}
+        .main{position: absolute;width: 380px;top: 50%;left: 50%;transform: translate(-50%,-50%);padding: 60px;
+        background-color: rgba(0, 0, 0, 0.8);color: white;}
+        .tbl{width: 100%;}
+        .txt{width: 100%;padding: 15px;background-color: #333;color: white;text-decoration: none;
+        margin-top: 10px;border-radius: 4px;border: none;}
+        .btn{width: 100%;padding: 15px;background-color: rgb(228,21,21);color: white;border: none;
+        border-radius: 2px;cursor: pointer;font-size: 20px;}
+        .one{color: grey;font-size: small;}
+        .two{color: grey;} 
+        .three{color: grey;}
+        .css{color:grey ;cursor: pointer;text-decoration: none;}
+        .css:hover{text-decoration: underline;}      
+    </style>
+</head
+<body>
+    <div class="image">
+        <img src="netflixlogo.png" width="150px" height="150px">
+    </div>
+    <div class="main">
+        <form name="frm">
+        <table class="tbl">
+
+      <tr>
+          <td>
+          <h1><b>sign in</b></h1>
+         </td>
+    </tr>
+      <tr>
+          <td>
+              &nbsp;
+            </td>
+        </tr>
+      <tr>
+          <td>
+              <input type="text" class="txt" placeholder="Email or phone number" id="uns" name="un">
+         </td>
+        </tr>
+      <tr> 
+          <td>
+              <div id="errorun" class="color"></div>
+            </td>
+        </tr>
+      <tr>
+          <td>
+              &nbsp;
+            </td>
+        </tr>
+      <tr>
+          <td>
+              <input type="password" class="txt" placeholder="Password" id="pass" name="pwd">
+            </td>
+        </tr>
+      <tr>
+          <td>
+              <div id="errorpwd" class="color"></div>
+            </td>
+        </tr>
+      <tr>
+          <td>
+              &nbsp;
+            </td>
+        </tr>
+    
+      <tr>
+          <td>
+              <input type="button" value="Sign In" onclick="valid()"class="btn">
+            </td>
+        </tr>
+      <tr class="one">
+          <td>
+              <span><input type="checkbox" name="" id="">Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">need help? </a></span>
+         </td>
+      </tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr class="two"> 
+        <td>
+            login with facebook
+        </td>
+    </tr>
+    <tr class="three">
+        <td>
+            New to Netflix? <b>Sign up now</b>
+        </td>
+    </tr>
+      </table>
+        </form>
+    </div>
+    <script>
+
+
+
+function valid()
+{
+var u=document.frm.un.value;
+var p=document.frm.pwd.value;
+if(u=="")
+{
+document.getElementById('errorun').innerHTML="username required....";
+document.getElementById('uns').style.borderBottom="2px solid #E87C03"
+}else
+{
+document.getElementById('errorun').innerHTML="";
+// document.getElementById('uns').style.borderBottom="2px solid green"
+}
+if(p=="")
+{
+document.getElementById('errorpwd').innerHTML="password required....";
+document.getElementById('pass').style.borderBottom="2px solid #E87C03"
+}else
+{
+document.getElementById('errorpwd').innerHTML="";
+// document.getElementById('pass').style.borderBottom="2px solid green"
+}
+
+}
+
+    </script>
+    
+</body>
+</html>

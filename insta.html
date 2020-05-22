@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instalogin</title>
+    <style>
+         *{box-sizing: border-box;}
+        body{margin: 0;font-family: Arial;}
+        .main{position: absolute;top: 40%;left: 40%;transform: translate(-40%,-40%);}
+        .frm{width: 380px;padding: 30px; border: 1px solid #ccc;}
+        .txt{width: 100%;padding: 15px;background-color:white;color:grey;text-decoration: none;
+        margin-top: 10px;border:1px solid grey;}
+        .btn{width: 100%;padding: 15px;background-color:blue;color: white;border: none;
+        border-radius: 4px;cursor: pointer;font-size: 20px;}
+        .one{position: relative;text-align: center;}
+        .one:before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 40%;
+            left: 0;
+            background-color: black;
+            top: 8px;
+        }
+        .one:after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 40%;
+            right: 0;
+            background-color: black;
+            top: 8px;
+        }
+        .two{color: grey;padding: 20px;} 
+        .three{color: grey;}
+    </style>
+</head>
+<div class="main">
+    <form name="frm" class="frm">
+<body>
+    <table>
+        <tr>
+            <td><img src="insta.png" ></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Phone number,username,or email" class="txt"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Password" class="txt"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="login" class="btn"></td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <td class="one"><span>OR</span></td>
+        </tr>
+        <tr class="two">
+            <td text align="center">login with facebook</td>
+        </tr>
+        <tr class="three">
+            <td text align="center">forgot password?</td>
+        </tr>
+        </form>
+    </div>
+    </table>
+<table>
+    <div class="foot">
+    <tr>
+        <td text align="center"> dont have an account?<b>Sign up</b></td>
+    </tr>
+    </div>
+</table>    
+</body>
+</html>
